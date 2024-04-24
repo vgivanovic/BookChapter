@@ -1,0 +1,41 @@
+# Created 2024-01-06
+# Time-stamp: <2024-04-22 22:17:07 vladimir>
+# Copyright (C) 2024 Vladimir G. Ivanović
+# Author: Vladimir G. Ivanović <vladimir@acm.org>
+#+title: Rocketship Education and Public Policy
+#+author: Vladimir G. Ivanović
+
+* Public policy issues raised by RSED
+1. What happens to RSED's profit?
+   - Can RSED convert its profits into private gain?
+   - Should the rules be tightened?
+2. Should California taxpayers fund out-of-state charter schools?
+3. Is there too much opportunity for fraud?
+   - Should oversight be improved?
+4. Is the SB740 rent subsidy program being abused?
+   - RSED leases from itself
+   - Subsidies continue forever
+5. Should sweeps be allowed into related non-profit entities? unrelated for-profit entities?
+6. Does RSED serve the children it claims to serve?
+   - Do the benefits outweight the costs?
+   - Who benefits? Who pays the costs?
+7. Should local school districts appoint or elect a charter school board member?
+8. How transparent should charter schools be? Transparent to whom?
+9. How well is RSED meeting the legislature's goals?
+10. How well is RSED meeting the CDE's goals?
+* A key tension: Are charter schools really public?
+** What are the characteristics of public schools vs charter schools?
+| Characeristic                        | TPSs  | Charters |
+|--------------------------------------+-------+----------|
+| Authorizer                           | State | LEA      |
+| Elected board                        | yes   | no       |
+| Self-perpetuating board              | yes   | no       |
+| Publicly funded                      | yes   | yes      |
+| Issue taxpayer bonds                 | yes   | no       |
+| Unionized                            | yes   | no       |
+| Subject to CPRA                      | yes   | yes      |
+| Open meetings                        | yes   | yes      |
+| Subject to conflict of interest laws | yes   | yes      |
+| Subject to Ed Code                   | yes   | no       |
+| Required to enroll all in district   | yes   | no       |
+* 

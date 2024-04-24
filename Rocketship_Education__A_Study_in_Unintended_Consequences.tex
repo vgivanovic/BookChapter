@@ -1,0 +1,109 @@
+% Time-stamp: <2024-04-23 23:28:02 vladimir>
+% Copyright (C) 2019-2024 Vladimir G. Ivanović
+% Author: Vladimir G. Ivanović <vladimir.ivanovic@sjsu.edu>
+% ORCID: https://orcid.org/0000-0002-7802-7970
+% arara: lualatex
+
+\documentclass[article,letterpaper,12pt,twoside,no-math]{memoir}
+
+\usepackage[USenglish]{babel}
+\usepackage[style=apa,sortcites=false,sorting=nyt,backend=biber]{biblatex}
+\usepackage{csquotes}
+\usepackage{enumitem}
+\usepackage{fontspec}
+\usepackage{framed}
+\usepackage{fullpage}
+\usepackage{grffile}            % allows spaces in file names
+\usepackage[american]{isodate}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{mVersion}
+\usepackage{orcidlink}
+\usepackage{titling}
+\usepackage{url}
+\usepackage[svgnames]{xcolor}
+
+% Uncomment for math
+%\usepackage{mathspec}
+%\usepackage[osf]{mathpazo}
+% \setmathfont[Numbers=Lining]{Minion Pro}
+% \setmathtt[Scale=0.9,Numbers=Lining]{Ubuntu Mono}
+
+\usepackage{hyperref}           % Must be last package loaded
+
+% Set fonts
+\setmainfont[Ligatures=TeX,Numbers=OldStyle,Numbers=Monospaced]{Alegreya}
+\setsansfont[Ligatures=TeX,Numbers=OldStyle,Numbers=Monospaced]{Alegreya Sans}
+\setmonofont[Scale=0.8]{Fira Mono}
+
+\setmathrm[Numbers=Monospaced]{Alegreya}
+\setmathsf[Numbers=Monospaced]{Alegreya Sans}
+\setmathtt[Scale=0.8]{Fira Mono}
+
+\raggedright                    % SJSU EDD Guidelines Checklist #2, #4
+\raggedbottom
+
+\def\UrlFont{\footnotesize\texttt}
+\urlstyle{tt}
+
+% \setVersion{0.1}                % Major.minor.build; Increment major and minor as appropriate
+\increaseBuild{}
+
+\setsecheadstyle{\Large\bfseries\raggedright\sffamily}
+\setsubsecheadstyle{\large\bfseries\raggedright\sffamily}
+\setlength{\parindent}{2em}
+
+% \def\museincludegraphics{%
+%   \begingroup
+%   \catcode`\|=0
+%   \catcode`\\=12
+%   \catcode`\#=12
+%   \includegraphics[width=0.85\textwidth]
+% }
+
+\cleanlookdateon% Remove ordinal day reference, e.g. st, nd, th
+
+\addbibresource{References.bib}
+
+\hypersetup{%
+  pdfinfo={%
+    Title={Rocketship Education: An Study in Unintended Consequences},
+    Author={Vladimir G. Ivanović},
+    Language={en-US},
+    Subject={},
+    Keywords={Rocketship Education, education public policy},
+    Version={\version}
+  }
+}
+
+\begin{document}
+
+\title{Rocketship Education: \\A Study in Unintended Consequences}
+\author{Vladimir G. Ivanović}
+
+\DoubleSpacing%
+
+\maketitle
+\pagestyle{plain}
+
+\section*{Introduction}
+Rocketship Education is a non-profit charter management organization (CMO) of 21 individual charter schools located across the United States, 13 of which are in California. Rocketship, founded in 2006, opened its first school in Santa Clara County, California in 2008. It pioneered an educational and financial model that is successful, has been a model for other CMOs, and offers lessons in unintended consequences.
+
+Charter schools in California were created by the Charter Schools Act of 1992. The stated intent was to improve pupil learning, especially for underserved children, encourage both new teaching methods and professional development for teachers, provide parents and students with expanded opportunities to choose a school that would best meet their needs, move to a performance-based accountability system that focused on measurable outcomes, and finally provide \textquote{vigorous competition} with public schools. The act also exempted charter schools from almost all of the Education Code that traditional public schools (TPSs) are required to adhere to. Charters, after submitting a petition, would be authorized for a limited time (five years) after which they had to apply periodically for reauthorized. 
+
+The Legislature's intentions all had unintended consequences, some of which have been exploited by Rocketship in ways that the Legislature likely did not foresee. But even before Rocketship was founded, the Charter Schools Act of 1992 was itself an unintended consequence of the ideas of the godfathers of charter schools, Ray Budde and Albert Shanker, with the free market-based ideology of Milton Friedman. 
+
+Budde and Shanker envisioned groups of \textit{teachers} creating a school within a school, one where teachers could experiment on how best to meet the educational needs of their students, relegating the school district to purely administrative functions. And although parental choice was mentioned, there was no notion of charter schools providing vigorous competition with anybody, much less TSPs.
+
+Somehow, Budde and Shanker's vision morphed into schools divorced from existing TSPs, with accountability systems that measured outcomes based on standardized tests, and were coupled with a perform-or-shutdown mentality \parencite[5]{EdSource2004}, which meant that schools fought for resources and were adverse to sharing ways of improving learning, surely all unintended consequences.
+
+\OnehalfSpacing%
+\printbibliography{}
+\DoubleSpacing%
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "Rocketship_Education__A_Study_in_Unintended_Consequences"
+%%% End:
