@@ -1,0 +1,29 @@
+#!/bin/sh
+#
+# To rebuild everything: bin/build -c -l -b -l -l
+#
+
+while [ "$#" -gt 0 ]; do
+    case "$1" in
+        -c|--clean)
+	    git clean -ffdx
+	    echo
+            shift 1
+            ;;
+        -b|--biber)
+            biber Rocketship_Education__A_Study_of_Unintended_Consequences
+	    echo
+            shift 1
+            ;;
+        -l|--lualatex)
+            lualatex Rocketship_Education__A_Study_of_Unintended_Consequences
+
+	    echo
+            shift 1
+            ;;
+        *)
+            echo "Unknown option: $1"
+            shift 1
+            ;;
+    esac
+done

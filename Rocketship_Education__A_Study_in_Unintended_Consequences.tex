@@ -1,109 +1,110 @@
-% Time-stamp: <2024-04-23 23:28:02 vladimir>
+% Time-stamp: <2024-04-24 22:14:43 vladimir>
 % Copyright (C) 2019-2024 Vladimir G. Ivanović
 % Author: Vladimir G. Ivanović <vladimir.ivanovic@sjsu.edu>
 % ORCID: https://orcid.org/0000-0002-7802-7970
 % arara: lualatex
 
-\documentclass[article,letterpaper,12pt,twoside,no-math]{memoir}
-
-\usepackage[USenglish]{babel}
-\usepackage[style=apa,sortcites=false,sorting=nyt,backend=biber]{biblatex}
-\usepackage{csquotes}
-\usepackage{enumitem}
-\usepackage{fontspec}
-\usepackage{framed}
-\usepackage{fullpage}
-\usepackage{grffile}            % allows spaces in file names
-\usepackage[american]{isodate}
-\usepackage{multicol}
-\usepackage{multirow}
-\usepackage{mVersion}
-\usepackage{orcidlink}
-\usepackage{titling}
-\usepackage{url}
-\usepackage[svgnames]{xcolor}
-
-% Uncomment for math
-%\usepackage{mathspec}
-%\usepackage[osf]{mathpazo}
-% \setmathfont[Numbers=Lining]{Minion Pro}
-% \setmathtt[Scale=0.9,Numbers=Lining]{Ubuntu Mono}
-
-\usepackage{hyperref}           % Must be last package loaded
-
-% Set fonts
-\setmainfont[Ligatures=TeX,Numbers=OldStyle,Numbers=Monospaced]{Alegreya}
-\setsansfont[Ligatures=TeX,Numbers=OldStyle,Numbers=Monospaced]{Alegreya Sans}
-\setmonofont[Scale=0.8]{Fira Mono}
-
-\setmathrm[Numbers=Monospaced]{Alegreya}
-\setmathsf[Numbers=Monospaced]{Alegreya Sans}
-\setmathtt[Scale=0.8]{Fira Mono}
-
-\raggedright                    % SJSU EDD Guidelines Checklist #2, #4
-\raggedbottom
-
-\def\UrlFont{\footnotesize\texttt}
-\urlstyle{tt}
-
-% \setVersion{0.1}                % Major.minor.build; Increment major and minor as appropriate
-\increaseBuild{}
-
-\setsecheadstyle{\Large\bfseries\raggedright\sffamily}
-\setsubsecheadstyle{\large\bfseries\raggedright\sffamily}
-\setlength{\parindent}{2em}
-
-% \def\museincludegraphics{%
-%   \begingroup
-%   \catcode`\|=0
-%   \catcode`\\=12
-%   \catcode`\#=12
-%   \includegraphics[width=0.85\textwidth]
-% }
-
-\cleanlookdateon% Remove ordinal day reference, e.g. st, nd, th
-
-\addbibresource{References.bib}
-
-\hypersetup{%
-  pdfinfo={%
-    Title={Rocketship Education: An Study in Unintended Consequences},
-    Author={Vladimir G. Ivanović},
-    Language={en-US},
-    Subject={},
-    Keywords={Rocketship Education, education public policy},
-    Version={\version}
-  }
-}
+\input{preamble}
 
 \begin{document}
 
-\title{Rocketship Education: \\A Study in Unintended Consequences}
-\author{Vladimir G. Ivanović}
-
 \DoubleSpacing%
-
-\maketitle
 \pagestyle{plain}
 
+\vspace{2in}
+\title{Rocketship Education: \\A Study of Unintended Consequences}
+\author{Vladimir G. Ivanović}
+
 \section*{Introduction}
+\label{sec:introduction}
+
 Rocketship Education is a non-profit charter management organization (CMO) of 21 individual charter schools located across the United States, 13 of which are in California. Rocketship, founded in 2006, opened its first school in Santa Clara County, California in 2008. It pioneered an educational and financial model that is successful, has been a model for other CMOs, and offers lessons in unintended consequences.
 
-Charter schools in California were created by the Charter Schools Act of 1992. The stated intent was to improve pupil learning, especially for underserved children, encourage both new teaching methods and professional development for teachers, provide parents and students with expanded opportunities to choose a school that would best meet their needs, move to a performance-based accountability system that focused on measurable outcomes, and finally provide \textquote{vigorous competition} with public schools. The act also exempted charter schools from almost all of the Education Code that traditional public schools (TPSs) are required to adhere to. Charters, after submitting a petition, would be authorized for a limited time (five years) after which they had to apply periodically for reauthorized. 
+Charter schools in California were created by the Charter Schools Act of 1992. The stated intent was to improve pupil learning, especially for underserved children, encourage both new teaching methods and professional development for teachers, provide parents and students with expanded opportunities to choose a school that would best meet their needs, move to a performance-based accountability system that focused on measurable outcomes, and finally provide \textquote{vigorous competition} with public schools. The act also exempted charter schools from almost all of the Education Code that traditional public schools (TPSs) are required to adhere to. Charters, after submitting a petition, would be authorized for a limited time (five years) after which they had to reapply periodically for authorization.
 
-The Legislature's intentions all had unintended consequences, some of which have been exploited by Rocketship in ways that the Legislature likely did not foresee. But even before Rocketship was founded, the Charter Schools Act of 1992 was itself an unintended consequence of the ideas of the godfathers of charter schools, Ray Budde and Albert Shanker, with the free market-based ideology of Milton Friedman. 
+The Legislature's intentions all had unintended consequences, some of which have been exploited by Rocketship in ways that the Legislature likely did not foresee. But even before Rocketship was founded, the Charter Schools Act of 1992 was itself an unintended consequence of the ideas of the godfathers of charter schools, Ray Budde and Albert Shanker.
 
-Budde and Shanker envisioned groups of \textit{teachers} creating a school within a school, one where teachers could experiment on how best to meet the educational needs of their students, relegating the school district to purely administrative functions. And although parental choice was mentioned, there was no notion of charter schools providing vigorous competition with anybody, much less TSPs.
+Budde and Shanker envisioned groups of \textit{teachers} creating a school within a school, one where teachers could experiment on how best to meet the educational needs of their students, relegating the school district to purely administrative functions. And although parental choice was mentioned, there was no notion of charter schools providing vigorous competition with anybody, much less with TPSs. That idea was introduced by Milton Friedman
 
-Somehow, Budde and Shanker's vision morphed into schools divorced from existing TSPs, with accountability systems that measured outcomes based on standardized tests, and were coupled with a perform-or-shutdown mentality \parencite[5]{EdSource2004}, which meant that schools fought for resources and were adverse to sharing ways of improving learning, surely all unintended consequences.
+Somehow Budde and Shanker's vision morphed into schools divorced from existing public school districts, with accountability systems that measured outcomes based on standardized tests which were coupled with a perform-or-shutdown mentality \parencite[5]{EdSource2004}. Teachers as drivers and owners of change receded from view and instead the focus became real estate and finance, not at all what Budde and Shanker had envisioned.
+
+The remainder of this chapter will look at three aspects of charter school law in California: competition, facilities, and flexibility. These aspects have heavily influenced how Rocketship is structured and how it operates. For each aspect, this chapter will examine the law and its intent, and then how that intent produced unintended consequences.
+
+\section*{Competition}
+\label{sec:competition}
+
+California Education Code §47600 et seq.\footnote{\url{https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?division=4.&chapter=1.&part=26.8.&lawCode=EDC&title=2.}} specifies eight goals for charter school. The eigthth goal, added in 1998, is \textquote{(g) Provide vigorous competition within the public school system to stimulate continual improvements in all public schools}. The intent of this goal is clear. Yet the state has never measured if charter schools do in fact stimulate improvement in public schools. The word ``competition'' rarely appears in analyses by the Legislative Analyst's Office (LAO) or in policy briefs. A mention was made in a review of charters schools in Sonoma, CA by \citeauthor{SuperiorCourtOfSonoma2003} which said that just a few charter schools cooperated with TPSs \parencite[3]{SuperiorCourtOfSonoma2003}. In 2005, a RAND study by \citeauthor{Zimmer.Buddin2009} concluded that \textquote[{\parencite[5]{Zimmer.Buddin2009}}]{charter schools are not creating competitive effects in California}.
+
+One might expect that with so little attention paid to vigorous competition that that goal had little effect on charter schools. But such is not the case. It has at least three consequential unintended effects. Charter schools are constantly in search of students, preferably the right kind of students. Thus they need to be able to market themselves effectively to attract students, and finally, this competition for students makes charter schools view TPSs as the enemy.
+
+\subsection*{The Search of Students}
+\label{sec:search-for-students}
+
+Unlike TPSs which have ready access to a supply of students, i.e. those which reside within district boundaries, charter schools must convince parents that their children will learn more by going to a charter school rather than gong to a TPS. Public schools need do nothing and students come to them. Charter schools need to fight for every student in the face of a well-know alternative: the local public school. Sometimes attracting students is easy because the local TPS has been systematically underfunded for decades, is located in an area with significant crime and high unemployment, and parents are understandably desperate. At other times, it takes slick marketing, artificially inflated results, and promises that will not be met to convince a parent to send their child to a charter school.
+
+Rocketship's marketing is well done. Their web site landing page immediately conveys three messages: you are not alone, your child will do exceptionally well at a Rocketship school, and it's free. First, the web site says that thousands of students (30,499) have attended Rocketship schools, so you, the parent, are not alone in choosing Rocketship for your child. Secondly, your child will be on a learning rocketship. Third and finally, not to worry, everyone can afford to go to a Rocketship school because it is free!
+
+It's noteworthy that every child portrayed on the Rocketship web site is smiling and is wildly enthusiastic.  They all wear Rocketship purple shirts which immediately identifies a Rocketship student. Wearing clothes that stand out and are shared with every other student is a powerful generator of belonging\parencite{Iannaccone1994}.
+
+Rocketship, whose explicit goal is to close the achievement gap, claims on their web site, that their students \textquote[{\parencite{RSED2023}}]{learn 5-7 \textit{months} [emphasis added] more every school year}. This is an exaggeration because it is not what is reported in \textcite{Raymond.etal2023}, the study they cite. \textcite[132]{Raymond.etal2023} show that Rocketship's estimated annual growth in reading and math to be 0.166 and 0.239 respectively. For a standard 180 day year (in California), this is just under 30 days growth in reading and just over 43 days in math, neither are anywhere near the 5 to 7 months claimed, and it certainly doesn't apply cumulatively to the six years that comprise K-5. However, on the plus side, a SRI Education report, \textcite{Tyler.etal2016}, not peer reviewed, concluded that Rocketship students outperformed their peers in middle school by roughly the amounts claimed on Rocketship's web site, but just for the first year of middle school.
+
+Rocketship's need for a robust pipeline of students is ever present, and so we see rather loose interpretations of reports and claims that go beyond the evidence supports, all in an effort to maintain this pipeline of students. It ought to be mentioned that charter schools are sometimes picky about what students they'd like to see enrolled. \citeauthor{Mommandi.Welner2021a} discuss their book on how charter schools influence what students enroll \parencite{Mommandi.Welner2021a}. Rocketship, for example, only accepts K–5 students. Limiting grade levels is not illegal in any way, but it is puzzling that Rocketship doesn't have a middle school or a high school. It is speculated that since high school graduation is seven years into the future, limiting the grades served to K-5 allows Rocketship to avoid being accountable for the outcomes that really matter: Is a student prepared for college or career.
+
+\subsection*{The Need for Marketing}
+\label{sec:need-for-marketing}
+
+\subsection*{Public Schools as the Enemy}
+\label{sec:public-schools-as-enemy}
+
+\section*{Facilities}
+\label{sec:facilities}
+
+\subsection*{The Choices for Facilities}
+\label{sec:choices-for-facilities}
+
+\subsection*{Lease or Own?}
+\label{sec:lease-or-own}
+
+\subsection*{Lease and Own}
+\label{sec:lease-and-own}
+
+\subsection*{Bonds}
+\label{sec:bonds}
+
+\subsubsection*{Types of Bonds}
+\label{sec:types-of-bonds}
+
+\subsubsection*{Conduit Bonds}
+\label{sec:conduit-bonds}
+
+\section*{Flexibility}
+\label{sec:flexibility}
+
+\subsection*{Blended Learning}
+\label{sec:blended-learning}
+
+\subsection*{Virtual Charter Schools}
+\label{sec:virt-chart-scho}
+
+\subsection*{Sweeps}
+\label{sec:sweeps}
+
+\subsection*{The Opportunity for Fraud}
+\label{sec:opportunity-for-fraud}
+
+\section*{Conclusion and Policy Recommendations}
+\label{sec:conclusions-policy-recommendations}
 
 \OnehalfSpacing%
 \printbibliography{}
-\DoubleSpacing%
 
 \end{document}
+\bye
+
+The first thing to note that competition implies winners and losers. TPSs are relatively immune to going out of business, unlike charter schools which, in theory, might not be able to renew their charter and thus go out of busineess. The possiblity of ceasing to exist has a remarkable ability to focus one's mind, and so charter schools are in a constant
+
 
 %%% Local Variables:
 %%% mode: latex
-%%% TeX-master: "Rocketship_Education__A_Study_in_Unintended_Consequences"
+%%% TeX-master: "Rocketship_Education__A_Study_of_Unintended_Consequences"
 %%% End:
